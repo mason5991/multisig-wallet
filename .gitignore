@@ -1,1 +1,13 @@
-/.DS_Store
+/.idea
+
+**/build
+
+**/node_modules
+
+**/coverage
+
+/backend/types/truffle-contracts
+/backend/types/web3-v1-contracts
+/backend/migrations/**/*.js
+/backend/migrations/**/*.map
+/backend/coverage.json
