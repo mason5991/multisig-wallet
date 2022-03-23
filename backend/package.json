@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "generate-types": "typechain --target=truffle-v5 './build/contracts/*.json'",
-    "generate-types:client": "typechain --target=web3-v1 './build/contracts/*.json'",
+    "generate-types": "typechain --target=truffle-v5 '../client/src/contracts/*.json'",
+    "generate-types:client": "typechain --target=web3-v1 '../client/src/contracts/*.json'",
     "generate-types:migrations": "tsc -p ./tsconfig.migrate.json --outDir migrations",
     "generate-types:all": "yarn generate-types && yarn generate-types:client && yarn generate-types:migrations",
     "postinstall": "truffle compile && yarn generate-types && yarn generate-types:client",
