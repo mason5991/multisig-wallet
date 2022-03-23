@@ -1,15 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-  Box,
-  VStack,
-  Grid,
-  Spinner,
-  Container,
-  Text,
-  Button,
-  FormControl,
-  FormErrorMessage,
-} from '@chakra-ui/react';
+import { Box, Grid, Button, FormControl, FormErrorMessage } from '@chakra-ui/react';
 import Home from './containers/Home';
 import { useWeb3Context } from './contexts/web3';
 

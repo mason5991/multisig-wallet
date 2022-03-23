@@ -10,5 +10,8 @@
     "nohoist": [
       "client/**"
     ]
+  },
+  "scripts": {
+    "build:all": "cd backend && yarn generate-types:all && cd ../client && yarn build"
   }
 }
