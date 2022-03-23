@@ -28,6 +28,7 @@ const Home = () => {
     const init = async () => {
       if (web3) {
         const instance = await getInstance(web3);
+        console.log('instance===', instance);
         setWallet(new Wallet(instance as unknown as WalletContract));
       }
     };
