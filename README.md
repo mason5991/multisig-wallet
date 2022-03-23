@@ -3,6 +3,7 @@
 ## Installation
 
 ```
+nvm use
 yarn install
 ```
 

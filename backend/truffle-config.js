@@ -1,3 +1,7 @@
+const fs = require('fs');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const path = require('path');
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -71,6 +75,21 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    rinkeby: {
+      provider: () =>
+        new HDWalletProvider({
+          privateKeys: fs
+            .readFileSync(path.join(__dirname, '.secret'))
+            .toString()
+            .trim()
+            .split(','),
+          providerOrUrl: 'https://rinkeby.infura.io/v3/5ee21c7fbde44a53b0f15c1658ee449c',
+          addressIndex: 0,
+          numberOfAddresses: 3,
+          shareNonce: true,
+        }),
+      network_id: '4',
+    },
   },
 
   // Set default mocha options here, use special reporters etc.

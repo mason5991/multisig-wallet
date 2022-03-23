@@ -9,7 +9,7 @@ import { useWeb3Context } from '../contexts/web3';
 import { getInstance } from '../utils';
 
 const Home = () => {
-  const { web3 } = useWeb3Context();
+  const { web3, account } = useWeb3Context();
   const [wallet, setWallet] = useState<Wallet | undefined>(undefined);
   const [accounts, setAccounts] = useState<string[] | undefined>(undefined);
   const [approvers, setApprovers] = useState<string[]>([]);
@@ -51,7 +51,7 @@ const Home = () => {
       }
     };
     init();
-  }, [web3, wallet]);
+  }, [web3, account, wallet]);
 
   return (
     <VStack spacing={8}>

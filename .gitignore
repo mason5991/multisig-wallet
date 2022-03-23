@@ -11,3 +11,6 @@
 /backend/migrations/**/*.js
 /backend/migrations/**/*.map
 /backend/coverage.json
+
+.secret
+.env
