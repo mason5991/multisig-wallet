@@ -12,6 +12,6 @@
     ]
   },
   "scripts": {
-    "build:all": "cd backend && yarn generate-types:all && cd ../client && yarn build"
+    "build:all": "CI='' cd backend && yarn generate-types:all && cd ../client && yarn build"
   }
 }
