@@ -9,7 +9,7 @@
 /backend/types/truffle-contracts
 /backend/types/web3-v1-contracts
 /backend/migrations/**/*.js
-/backend/migrations/**/*.map
+/backend/migrations/**/*.js.map
 /backend/coverage.json
 
 .secret
