@@ -12,6 +12,6 @@
     ]
   },
   "scripts": {
-    "build:all": "cd backend && yarn generate-types:all && cd ../client && CI='' GENERATE_SOURCEMAP=false yarn build"
+    "build:all": "cd backend && truffle compile && yarn generate-types:all && cd ../client && CI='' GENERATE_SOURCEMAP=false yarn build"
   }
 }
